@@ -1,12 +1,12 @@
 {
-  "name": "slp-cli-wallet",
-  "description": "A hacker-friendly, command line BCH and SLP wallet built with bch-js",
-  "version": "2.0.1",
+  "name": "collaborative-coinjoin",
+  "description": "A fork for slp-cli-wallet that implements a prototype of Collaborative CoinJoin protocol",
+  "version": "1.0.0",
   "author": "Chris Troutner @christroutner",
   "bin": {
-    "slp-cli-wallet": "./bin/run"
+    "ccoinjoin": "./bin/run"
   },
-  "bugs": "https://github.com/christroutner/slp-cli-wallet/issues",
+  "bugs": "https://github.com/Permissionless-Software-Foundation/collaborative-coinjoin/issues",
   "dependencies": {
     "@oclif/command": "^1.5.4",
     "@oclif/config": "^1.9.0",
@@ -49,7 +49,7 @@
     "/wallets",
     "/config"
   ],
-  "homepage": "https://github.com/christroutner/slp-cli-wallet",
+  "homepage": "https://github.com/Permissionless-Software-Foundation/collaborative-coinjoin",
   "keywords": [
     "oclif"
   ],
@@ -57,12 +57,12 @@
   "main": "src/index.js",
   "oclif": {
     "commands": "./src/commands",
-    "bin": "slp-cli-wallet",
+    "bin": "ccoinjoin",
     "plugins": [
       "@oclif/plugin-help"
     ]
   },
-  "repository": "christroutner/slp-cli-wallet",
+  "repository": "Permissionless-Software-Foundation/collaborative-coinjoin",
   "scripts": {
     "postpack": "rm -f oclif.manifest.json",
     "prepack": "oclif-dev manifest && oclif-dev readme",
